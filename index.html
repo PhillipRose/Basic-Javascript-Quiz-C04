@@ -10,6 +10,79 @@
 <body>
     <p>HELLO WORLD</p>
 
+    <!-- default page with rules, start btn, highscore link and timer
+     -->
+     <!-- Always visible - Timer and High score link/btn w/ no styling -->
+     <div class="top-bar">
+        <p class="timer">
+            Timer: <span class="counter">number here</span>
+        </p>
+        <p class="score-list">
+            <a class="score-link">List of High scores</a>
+        </p>
+     </div>
+     <!-- default starting page with start button and rules/explanation of the game  -->
+     <div class="quiz-start">
+        <p class="rules-text"></p>
+        <button class="start-btn">Start Quiz</button>
+     </div>
+
+     <!-- HIDDEN UNTIL START BUTTON IS CLICKED.
+         default template for questions and answer choices, also space to tell correct or incorrect. -->
+     <div class="question-page">
+        <div class="question-text">
+            <p class="question-formatting">Actual question goes here</p>
+        </div>
+        <div class="answer-choices">
+            <!-- button text should be styled to have the 1. inside of the button  -->
+            <ul class="answer list">
+                <li class="answer-choice" type="none">
+                    <button class="answer-btn" id="choice-1"></button>
+                </li>
+                <li class="answer-choice" type="none">
+                    <button class="answer-btn" id="choice-2"></button>
+                </li>
+                <li class="answer-choice" type="none">
+                    <button class="answer-btn" id="choice-3"></button>
+                </li>
+                <li class="answer-choice" type="none">
+                    <button class="answer-btn" id="choice-4"></button>
+                </li>
+            </ul>
+        </div>
+        <!-- Should tell the user if they have a correct or incorrect answer in an easy to read way.  -->
+        <hr>
+        <p class="answer-result">Your answer result goes here</p>
+     </div>
+     
+
+     <!-- HIDDEN UNTIL QUIZ IS OVER
+        This is the page to enter score nickname, limit of 3 character for nostalgia of arcade games and to limit explicit content options. -->
+        <div class="end-game">
+            <form class="user-scoring">
+                <p class="end-game-text">The text at the end of the game goes here along with</p>
+                <p class="score-total">Your final score was: 
+                    <span class="point-number">number value of score goes here.</span>
+                </p>
+                <input class="player-name" placeholder="Enter your initials (Max 3 characters)">
+                <button class="submit-score-btn" type="submit">Record High Score</button>
+            </form>
+        </div>
+
+        <!-- HIDDEN UNTIL SUBMIT BUTTON OR HIGH SCORE <a></a> IS CLICKED  -->
+        <!-- shows the list of saved scores sorted by the highest score at the top  -->
+        <!-- The list may need to only show the top X due to screen size limitations  -->
+        <div class="high-score-page">
+            <H1 class="high-score-title">ALL TIME HIGH SCORERS!</H1>
+            <p class="high-score-text">
+                any extra needed text goes here
+            </p>
+            <!-- list will be filled via javascript using the stored players as objects -->
+            <!-- maybe highlight the top 3 with special colors/effects  -->
+            <ol class="high-score-ranking">
+                <!-- list of high scores goes here, maybe have a couple default ones to compare with  -->
+            </ol>
+        </div>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
