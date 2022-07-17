@@ -18,7 +18,7 @@
             Timer: <span class="counter">number here</span>
         </p>
         <p class="score-list">
-            <a class="score-link">List of High scores</a>
+            <a class="score-link" href="#highlisting">View Highscores</a>
         </p>
      </div>
      <!-- default starting page with start button and rules/explanation of the game  -->
@@ -64,7 +64,7 @@
                 <p class="score-total">Your final score was: 
                     <span class="point-number">number value of score goes here.</span>
                 </p>
-                <input class="player-name" placeholder="Enter your initials (Max 3 characters)">
+                <input class="player-name" placeholder="Enter initials (Max 3 characters)">
                 <button class="submit-score-btn" type="submit">Record High Score</button>
             </form>
         </div>
@@ -72,7 +72,7 @@
         <!-- HIDDEN UNTIL SUBMIT BUTTON OR HIGH SCORE <a></a> IS CLICKED  -->
         <!-- shows the list of saved scores sorted by the highest score at the top  -->
         <!-- The list may need to only show the top X due to screen size limitations  -->
-        <div class="high-score-page">
+        <div class="high-score-page" id="highlisting">
             <H1 class="high-score-title">ALL TIME HIGH SCORERS!</H1>
             <p class="high-score-text">
                 any extra needed text goes here
