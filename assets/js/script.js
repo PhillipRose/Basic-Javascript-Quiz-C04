@@ -12,6 +12,35 @@
     // scoreValue: number that can be the same or different for each question based on how har it is 
 // };
 
+var question1 = {
+    questionText: '',
+    choiceList: [],
+    answer: '',
+};
+
+var question2 = {
+    questionText: '',
+    choiceList: [],
+    answer: '',
+};
+
+var question3 = {
+    questionText: '',
+    choiceList: [],
+    answer: '',
+};
+
+var question4 = {
+    questionText: '',
+    choiceList: [],
+    answer: '',
+};
+
+var question5 = {
+    questionText: '',
+    choiceList: [],
+    answer: '',
+};
 
 // NOTES: This is how to do the 5 seconds = X points rounded down 
 // what the timer is 
