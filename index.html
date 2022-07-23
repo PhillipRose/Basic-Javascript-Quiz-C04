@@ -24,10 +24,11 @@
      <!-- default starting page with start button and rules/explanation of the game  -->
      <div class="quiz-start">
         <p class="rules-text"></p>
-        <button class="start-btn">Start Quiz</button>
+        <!-- have this button activate the starting function use window.location.replace('next html page destination ./') -->
+        <button class="start-btn" onclick="init()">Start Quiz</button>
      </div>
 
-     <!-- HIDDEN UNTIL START BUTTON IS CLICKED.
+     <!-- MAKE INTO A DIFFERENT HTML FILE AND INCLUDE IN REPO ASSETS FOLDER UNDER PAGES OR HTML.
          default template for questions and answer choices, also space to tell correct or incorrect. -->
      <div class="question-page">
         <div class="question-text">

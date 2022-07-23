@@ -54,6 +54,26 @@ var questionList = [question1, question2, question3, question4, question5]
 // var rounding = Math.trunc(timer/5)
 // this returns 10
 
+// for loop to randomize question order array.
+// CREDIT FOR BASE: https://www.codegrepper.com/code-examples/javascript/randomize+the+index+of+an+array
+// var arr = [0,1,2,3,4,5]
+
+// function shuffleArray(arr) {
+//     for (let i = arr.length - 1; i > 0; i--) {
+//         const j = Math.floor(Math.random() * (i + 1));
+//         [arr[i], arr[j]] = [arr[j], arr[i]];
+//       return arr
+
+//     }
+// }
+// let result = shuffleArray(arr)
+// console.log(result);
+
+// function init(){
+//     // console.log('init function hitting');
+//     // window.location.replace();
+// }
+
 
 
 
