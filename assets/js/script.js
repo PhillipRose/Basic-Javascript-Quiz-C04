@@ -13,34 +13,39 @@
 // };
 
 var question1 = {
-    questionText: '',
-    choiceList: [],
-    answer: '',
+    questionText: 'This is a valid way to declare variables in Javascript, var a, b, c;',
+    choiceList: ['True', 'False', 'Not enough information to answer'],
+    answer: 'True',
 };
 
 var question2 = {
-    questionText: '',
-    choiceList: [],
-    answer: '',
+    questionText: 'What is the method to keep a page from reloading after the submit button is clicked in the <form></form> element?',
+    choiceList: ['preventRefresh()','preventPropagation()','preventBubbling()','preventStandard()','preventDefault()'],
+    answer: 'preventDefault()',
 };
 
 var question3 = {
-    questionText: '',
-    choiceList: [],
-    answer: '',
+    questionText: "Given the following object: var obj = {name: 'John', age: 42, hasJob: true,}; what is the correct syntax to find the value of age?",
+    choiceList: ['obj.age()','object["age"]','obj[age]','obj.age'],
+    answer: 'obj.age',
 };
 
+console.log(question3.questionText);
+
 var question4 = {
-    questionText: '',
-    choiceList: [],
-    answer: '',
+    questionText: 'Given this array: var arr = [0,1,2,3,4,5]; and this for loop condition inside of a called function: for (var i = 0; i < arr.length; i--); how many times would this loop run?',
+    choiceList: ['6 times','It would not run','7 times','Forever', 'Not enough information'],
+    answer: 'Forever',
 };
 
 var question5 = {
-    questionText: '',
-    choiceList: [],
-    answer: '',
+    questionText: 'What is the term for a function that is stored inside the key of an object?',
+    choiceList: ['Standard Function','Call','Method','Callback Function'],
+    answer: 'Method',
 };
+
+// loop through to generate the question order 
+var questionList = [question1, question2, question3, question4, question5]
 
 // NOTES: This is how to do the 5 seconds = X points rounded down 
 // what the timer is 
